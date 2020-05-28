@@ -1,0 +1,168 @@
+.agendamento-wrap{
+	.container{
+		max-width: 480px;
+	}
+	.calendar-wrap{
+		position: relative;
+		padding-bottom: 24px;
+
+		&.error{
+			.daterangepicker{
+				border-bottom: 4px solid $WarningLightFailure;
+	            .dark &{
+	                border-bottom: 4px solid $WarningDarkFailure;
+	            }
+			}
+		}
+	}
+	.embedded{
+		max-width: 450px;
+	}
+	strong{
+		display: block;
+	}
+
+	.wrap-option{
+		margin: 10px 0;
+		background-color: white;
+		display: inline-block;
+		width: 100%;
+		max-width: 450px;
+
+		ul{
+			padding: 0 0 0 18px;
+			margin: 0;
+			list-style: none;
+			li{
+				label{
+					width: 100%;
+					margin: 0;
+					position: relative;
+					cursor: pointer;
+
+					&:before{
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+					}
+				}
+				div{
+					width: calc(100% - 43px);
+					margin-left: 36px;
+					padding: 12px 0;
+					display: inline-block;
+				}
+				span{
+					color: $TextLightSecondary;
+					display: block;
+					margin-top: 3px;
+				}
+
+				&:first-child{
+					div{
+						border-bottom: 1px solid $BgDarkSteps;
+					}
+				}
+			}
+		}
+
+		&.error{
+			border-bottom: 4px solid $WarningLightFailure;
+            .dark &{
+                border-bottom: 4px solid $WarningDarkFailure;
+            }
+		}
+	}
+
+	p.warning{
+		font-size: .9em;
+		color: $TextLightSecondary;
+		margin-bottom: 40px;
+	}
+
+	.dark &{
+		.wrap-option{
+			background-color: $BgDarkBar;
+			ul li span{
+				color: $TextDarkDisable;
+			}
+		}
+
+		p.warning{
+			color: $TextDarkDisable;
+		}
+	}
+}
+
+.agendamento-confirm{
+	.container{
+		background-color: white;
+		max-width: 450px;
+		padding: 32px 15px;
+		text-align: center;
+		border-radius: 4px;
+	}
+
+	.sky_icon{
+		width: 72px;
+		height: 72px;
+		background-size: 100%;
+	}
+
+	h4{
+		margin: 16px 0;
+	}
+
+	p{
+		margin-bottom: 4px;
+	}
+
+	strong{
+		margin-bottom: 8px;
+		display: block;
+	}
+
+	.info-data{
+		border-bottom: 1px solid $BgDarkSteps;
+		margin-bottom: 24px;
+		padding-bottom: 20px;
+	}
+
+	.info-end{
+		margin-bottom: 24px;
+	}
+
+	.btn{
+		width: 100%;
+		max-width: 290px;
+	}
+}
+
+.modal-error{
+	.modal-dialog{
+		width: 288px;
+	}
+	.modal-content{
+		margin: 0;
+	}
+	.modal-body{
+		text-align: center;
+		.sky_icon{
+			width: 72px;
+			height: 72px;
+			background-size: 100%;
+			margin-top: 10px;
+		}
+
+		strong{
+			font-size: 1.25em;
+			display: block;
+			margin: 24px 0 16px;
+		}
+
+		.btn{
+			width: 240px;
+			margin-top: 16px;
+		}
+	}
+}
