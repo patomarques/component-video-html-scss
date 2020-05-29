@@ -1,11 +1,14 @@
 {
   "name": "wp-minimalist-boilerplate",
   "version": "1.0.0",
-  "author": "João Vilaça",
-  "description": "Minimal webpack boilerplate with HMR and sass",
+  "engines": {
+    "node": "13.10.x"
+  },
+  "author": "Dayvson Marques",
+  "description": "Minimal webpack boilerplate",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jpggvilaca/webpack-boilerplate"
+    "url": "https://github.com/patomarques/component-video-html-scss"
   },
   "main": "index.js",
   "scripts": {
